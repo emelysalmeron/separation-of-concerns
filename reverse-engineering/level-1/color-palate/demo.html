@@ -12,80 +12,91 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      .full-screen {
+        height: 100vh;
+        width: 100vw;
+      }
     </style>
   </head>
 
   <body>
-    <section id="user-interface">
-      <form class="color-selection">
-        <input type="color" name="selection" />
-        <br />
-        <input type="button" id="set-color" value="set background" />
-      </form>
-    </section>
+    <div id="user-interface" class="full-screen">
+      <input type="color" class="color-selection" id="new-color" />
+    </div>
+
     <script>
-      const _0x2d14 = [
-        'selection',
-        'style',
-        'body',
-        'form',
-        '8082YTPhrn',
-        '6857sPuzTj',
-        '61986mNpESc',
-        '45iDVyNY',
-        '95611gYngAO',
-        '6xGIAaR',
-        'getElementById',
-        '68823luTmKM',
-        'addEventListener',
-        '7451qXclMZ',
-        '384278WMdxfv',
-        '1zFsAAG',
-        '26Efcmgo',
-        'value',
-        'background-color:\x20',
-      ];
-      const _0x298e0e = _0x5a23;
-      function _0x5a23(_0x1a5a7b, _0xc729e7) {
+      var _0x23d169 = _0x1b00;
+      function _0x1b00(_0x349d9f, _0x35823a) {
+        var _0x2e4e87 = _0x2e4e();
         return (
-          (_0x5a23 = function (_0x2d1454, _0x5a238d) {
-            _0x2d1454 = _0x2d1454 - 0x183;
-            let _0x116796 = _0x2d14[_0x2d1454];
-            return _0x116796;
+          (_0x1b00 = function (_0x1b005a, _0x534984) {
+            _0x1b005a = _0x1b005a - 0xdc;
+            var _0x1ad575 = _0x2e4e87[_0x1b005a];
+            return _0x1ad575;
           }),
-          _0x5a23(_0x1a5a7b, _0xc729e7)
+          _0x1b00(_0x349d9f, _0x35823a)
         );
       }
-      (function (_0x40a530, _0x2959a8) {
-        const _0x49bcea = _0x5a23;
+      function _0x2e4e() {
+        var _0x12d936 = [
+          'user-interface',
+          '20CUPhHB',
+          '1884024QWhaxV',
+          '1301944rmfDCW',
+          'target',
+          '1436862OyXtgu',
+          'style',
+          'getElementById',
+          '100TKMFxl',
+          '608373VGmCWA',
+          'value',
+          '3RSQZix',
+          'backgroundColor',
+          '6992528ImhVUR',
+          'new-color',
+          'addEventListener',
+          '653164WSIkxC',
+          'change',
+          '574586Fbajuc',
+        ];
+        _0x2e4e = function () {
+          return _0x12d936;
+        };
+        return _0x2e4e();
+      }
+      (function (_0x5ebd05, _0x31589d) {
+        var _0x3deee0 = _0x1b00,
+          _0x4dfcb8 = _0x5ebd05();
         while (!![]) {
           try {
-            const _0x3cf589 =
-              -parseInt(_0x49bcea(0x18e)) * -parseInt(_0x49bcea(0x183)) +
-              -parseInt(_0x49bcea(0x18c)) +
-              parseInt(_0x49bcea(0x187)) * -parseInt(_0x49bcea(0x18b)) +
-              -parseInt(_0x49bcea(0x189)) +
-              -parseInt(_0x49bcea(0x18d)) * -parseInt(_0x49bcea(0x186)) +
-              parseInt(_0x49bcea(0x185)) * parseInt(_0x49bcea(0x195)) +
-              parseInt(_0x49bcea(0x184));
-            if (_0x3cf589 === _0x2959a8) break;
-            else _0x40a530['push'](_0x40a530['shift']());
-          } catch (_0x47cbd6) {
-            _0x40a530['push'](_0x40a530['shift']());
+            var _0x2b9846 =
+              -parseInt(_0x3deee0(0xe7)) / 0x1 +
+              (-parseInt(_0x3deee0(0xe9)) / 0x2) *
+                (-parseInt(_0x3deee0(0xe2)) / 0x3) +
+              parseInt(_0x3deee0(0xec)) / 0x4 +
+              (-parseInt(_0x3deee0(0xeb)) / 0x5) *
+                (parseInt(_0x3deee0(0xdc)) / 0x6) +
+              -parseInt(_0x3deee0(0xed)) / 0x7 +
+              parseInt(_0x3deee0(0xe4)) / 0x8 +
+              (-parseInt(_0x3deee0(0xe0)) / 0x9) *
+                (-parseInt(_0x3deee0(0xdf)) / 0xa);
+            if (_0x2b9846 === _0x31589d) break;
+            else _0x4dfcb8['push'](_0x4dfcb8['shift']());
+          } catch (_0x3118c2) {
+            _0x4dfcb8['push'](_0x4dfcb8['shift']());
           }
         }
-      })(_0x2d14, 0x31422),
-        document[_0x298e0e(0x188)]('set-color')[_0x298e0e(0x18a)](
-          'click',
-          (_0x3d7379) => {
-            const _0x3fde22 = _0x298e0e;
-            const _0x1e079e = _0x3d7379['target'][_0x3fde22(0x194)],
-              _0x5c3b88 = _0x1e079e[_0x3fde22(0x191)][_0x3fde22(0x18f)],
-              _0x1e8bc0 = _0x3fde22(0x190) + _0x5c3b88 + ';';
-            document[_0x3fde22(0x193)][_0x3fde22(0x192)] = _0x1e8bc0;
-          },
-        );
-      document[_0x298e0e(0x188)]('set-color').click();
+      })(_0x2e4e, 0x7cd27),
+        document[_0x23d169(0xde)](_0x23d169(0xe5))[_0x23d169(0xe6)](
+          _0x23d169(0xe8),
+          (_0x3ee911) =>
+            (document['getElementById'](_0x23d169(0xea))[_0x23d169(0xdd)][
+              _0x23d169(0xe3)
+            ] = _0x3ee911[_0x23d169(0xee)][_0x23d169(0xe1)]),
+        ),
+        (document[_0x23d169(0xde)]('user-interface')[_0x23d169(0xdd)][
+          'backgroundColor'
+        ] = document[_0x23d169(0xde)]('new-color')[_0x23d169(0xe1)]);
     </script>
   </body>
 </html>

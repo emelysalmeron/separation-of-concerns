@@ -1,6 +1,8 @@
 # Reverse Engineering
 
-> _hint_: study `/stepped` and `/separated` before starting these exercises
+> _hint 1_: study `/stepped` and `/separated` before starting these exercises
+>
+> _hint 2_: study how to use [forms](https://javascript.info/forms-controls), almost all these exercises use them
 
 In this chapter you will practice writing websites that have a single user interaction. You will be given a working demo with code that is very hard to read. Your task will be to study the program's behavior by using it (not reading the code!) then _reverse-engineer_ the same behavior starting from empty files.
 
@@ -9,6 +11,18 @@ Remember **Behavior, Strategy, Implementation**? Here it is all over again!
 - **Behavior:** What user interactions does the web page support? What happens when the user interacts with the page?
 - **Strategy:** How is the problem broken down and solved? A lot of the strategy is already decided for you by the empty folder structure and the steps listed below. You're on your own to create a strategy for body of each function ;)
 - **Implementation:** What lines of code did you write to finally make the website work? Did you refactor your handler into logic and components?
+
+---
+
+## Inspect Everything!
+
+Half of the challenge in reverse engineering is understanding what you're rebuilding. You will want to inspect the demo at every step of your reverse-engineering to make sure you are building the best copy you can:
+
+- Inspect the _sources_ to find out what HTML is written in the demo.
+- Inspect the _styles_ of each element to reconstruct their classes (if you can't find it in the sources)
+- Inspect each element in the DOM to find _event listeners_. Which elements have listeners? What type of listener is it?
+
+You should spend at least as much time inspecting the demo as you do writing code.
 
 ---
 
@@ -68,7 +82,36 @@ Following these steps will give you some direction and make it easier to write f
 
    </details>
 
-3. **User Interaction:** Now that your boilerplate and data are ready, it's time to make the thing happen! You should practice implementing user interactions from the screen backwards - first writing what the user sees, then incrementally building up the code "behind" the UI to add interactivity.
+3. **Initialize**: Does anything happen when the page is loaded that requires JavaScript? Usually this will be something displayed in the UI, and will often include program data that you don't want too write directly into the HTML file.
+
+   <details>
+   <summary>example snippet</summary>
+
+   ```html
+   <div id="user-interface">
+     <h1 id="welcome-header"></h1>
+   </div>
+   ```
+
+   ```js
+   // ./src/data.js
+
+   export const data = {
+     greeting: 'hello',
+   };
+   ```
+
+   ```js
+   // ./src/init/index.js
+
+   import { data } from '../data.js';
+
+   document.getElementById('welcome-header').innerHTML = data.greeting;
+   ```
+
+   </details>
+
+4. **User Interaction:** Now that your boilerplate and data are ready, it's time to make the thing happen! You should practice implementing user interactions from the screen backwards - first writing what the user sees, then incrementally building up the code "behind" the UI to add interactivity.
 
    1. **UI:** Write the HTML & CSS for the user interface:
 
