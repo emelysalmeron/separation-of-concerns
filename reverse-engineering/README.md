@@ -10,7 +10,11 @@ Remember **Behavior, Strategy, Implementation**? Here it is all over again!
 - **Strategy:** How is the problem broken down and solved? A lot of the strategy is already decided for you by the empty folder structure and the steps listed below. You're on your own to create a strategy for body of each function ;)
 - **Implementation:** What lines of code did you write to finally make the website work? Did you refactor your handler into logic and components?
 
----
+--
+
+## Use the site
+
+Explore the site with your mouse, trying to describe the webpage behavior
 
 ## Incremental Development
 
@@ -120,7 +124,7 @@ Following these steps will give you some direction and make it easier to write f
 
       </details>
 
-   3. **Behavior:** Move the handler to a separate file and beging writing the user interaction in one big function. You don't need to finish this step completely before starting to **refactor**, if you can already tell that you will need some logic or components you can start writing them at the same time as the handler.
+   3. **Behavior:** Move the handler to a separate file and begin writing the user interaction in one big function. You don't need to finish this step completely before starting to **refactor**, if you can already tell that you will need some logic or components you can start writing them at the same time as the handler.
 
       <details>
       <summary>example snippets</summary>
